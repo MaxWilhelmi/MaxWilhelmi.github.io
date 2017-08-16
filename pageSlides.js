@@ -10,8 +10,8 @@ $(document).ready(function() {
 
 	if (jQuery.browser.mobile) {
 		// document.getElementById("mobile-css").innerHTML = "<link rel="stylesheet" href="mobile.css">";
-
-		$("body").css("width","100%");
+		var x = toString(window.innerWidth);
+		$("body").css("width",x);
 		$("header").css("position","fixed"); 
 		$("header").css("width","100%"); 
 		$("header").css("display","flex"); 
