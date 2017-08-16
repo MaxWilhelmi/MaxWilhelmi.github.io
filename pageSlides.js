@@ -11,8 +11,6 @@ $(document).ready(function() {
 	if (jQuery.browser.mobile) {
 		document.getElementById("mobile-css").innerHTML = "<link rel="stylesheet" href="mobile.css">";
 	}
-
-	document.write('<script src="/myJavascript.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
 	
 
 	$("#showreel").fitVids();
