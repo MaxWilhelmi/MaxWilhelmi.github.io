@@ -18,7 +18,7 @@ $(document).ready(function() {
 		$("header").css("flex-flow","row"); 
 		$("header").css("justify-content","space-between"); 
 		$("header").css("align-items","center");
-		$("header").css("overflow","hidden");  
+		// $("header").css("overflow","hidden");  
 	}
 	
 
