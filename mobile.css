@@ -1,6 +1,4 @@
-body {
-	width: 100%;
-}
+body { width: 100%; }
 
 header {
 	position: fixed;
@@ -12,3 +10,5 @@ header {
 	align-items: center;
 	overflow: hidden;
 }
+
+.slide { top: 2em; }
