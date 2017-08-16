@@ -11,13 +11,13 @@ $(document).ready(function() {
 	if (jQuery.browser.mobile) {
 		console.log("is mobile");
 		// $("body").css("width","100%");
-		// $("header").css("position","fixed");
-		// $("header").css("width","100%");
-		// $("header").css("z-index","100");
-		// $("header").css("display","flex");
-		// $("header").css("flex-flow","row");
-		// $("header").css("justify-content","space-between");
-		// $("header").css("align-items","center");
+		$("header").css("position","fixed");
+		$("header").css("width","100%");
+		$("header").css("z-index","100");
+		$("header").css("display","flex");
+		$("header").css("flex-flow","row");
+		$("header").css("justify-content","space-between");
+		$("header").css("align-items","center");
 		// $("header").css("overflow","hidden");
 	}
 
