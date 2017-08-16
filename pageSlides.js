@@ -13,7 +13,7 @@ $(document).ready(function() {
 		var x = window.innerWidth;
 		$("body").css("width","50%");
 		$("header").css("position","fixed"); 
-		$("header").css("width","100%"); 
+		$("header").css("width","50%"); 
 		$("header").css("display","flex"); 
 		$("header").css("flex-flow","row"); 
 		$("header").css("justify-content","space-between"); 
