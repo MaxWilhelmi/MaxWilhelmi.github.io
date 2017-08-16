@@ -11,7 +11,7 @@ $(document).ready(function() {
 	if (jQuery.browser.mobile) {
 		// document.getElementById("mobile-css").innerHTML = "<link rel="stylesheet" href="mobile.css">";
 		var x = window.innerWidth;
-		$("body").css("width",x.toString());
+		$("body").css("width","50%");
 		$("header").css("position","fixed"); 
 		$("header").css("width","100%"); 
 		$("header").css("display","flex"); 
