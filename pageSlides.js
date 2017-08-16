@@ -10,9 +10,10 @@ $(document).ready(function() {
 
 	if (jQuery.browser.mobile) {
 		console.log("is mobile");
+		var x = toString(screen.width);
 		$("body").css("width","100%");
 		$("header").css("position","fixed");
-		$("header").css("width",screen.width);
+		$("header").css("width",x);
 		$("header").css("z-index","100");
 		$("header").css("display","flex");
 		$("header").css("flex-flow","row");
