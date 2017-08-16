@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	if (jQuery.browser.mobile) {
 		console.log("is mobile");
-		// $("body").css("width","100%");
+		$("body").css("width","100%");
 		$("header").css("position","fixed");
 		$("header").css("width","100%");
 		$("header").css("z-index","100");
