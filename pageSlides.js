@@ -12,7 +12,7 @@ $(document).ready(function() {
 		console.log("is mobile");
 		$("body").css("width","100%");
 		$("header").css("position","fixed");
-		$("header").css("width","100%");
+		$("header").css("width","screen.width");
 		$("header").css("z-index","100");
 		$("header").css("display","flex");
 		$("header").css("flex-flow","row");
