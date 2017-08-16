@@ -11,6 +11,16 @@ $(document).ready(function() {
 	if (jQuery.browser.mobile) {
 		document.getElementById("mobile-css").innerHTML = "<link rel="stylesheet" href="mobile.css">";
 	}
+	
+	if(!document.__defineGetter__) {
+	    Object.defineProperty(document, 'cookie', {
+	        get: function(){return ''},
+	        set: function(){return true},
+	    });
+	} else {
+	    document.__defineGetter__("cookie", function() { return '';} );
+	    document.__defineSetter__("cookie", function() {} );
+	}
 
 	$("#showreel").fitVids();
 
