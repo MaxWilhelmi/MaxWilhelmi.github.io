@@ -15,7 +15,7 @@ $(document).ready(function() {
 	// var length = path.getTotalLength();
 	// console.log(length);
 
-	var setHeaderWidth = $("header").css("width");;
+	var setHeaderWidth = $("header").css("width");
 
 	makeTransparentFast("class","photo-overlays","photo-overlays *");
 	$(".photo-overlays").addClass("height-zero");
@@ -382,7 +382,7 @@ $(document).ready(function() {
 		}
 		
 		if (jQuery.browser.mobile) {
-			var x = setHeaderWidth + "px";
+			var x = setHeaderWidth;
 			console.log(x);
 			$("header").css("max-width",x);
 		}
@@ -403,6 +403,7 @@ if (jQuery.browser.mobile) {
 
 window.onload = function(){
 	setHeaderWidth = $("header").css("width");
+	console.log(setHeaderWidth);
 };
 
 // window.onorientationchange(function(){
