@@ -406,9 +406,9 @@ window.onload = function(){
 	console.log(setHeaderWidth);
 };
 
-// window.onorientationchange(function(){
-//   	setHeaderWidth = $("header").css("width");
-// });
+$(window).on("orientationchange", function( event ) {
+  console.log( "This device is in " + event.orientation + " mode!" );
+});
 
 function changeNavSlideColors(pass) {
 	var navID = ("#" + pass);
