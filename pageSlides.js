@@ -381,6 +381,11 @@ $(document).ready(function() {
 			// }
 		}
 		
+		if (jQuery.browser.mobile) {
+			var x = setHeaderWidth + "px";
+			console.log(x);
+			$("header").css("max-width",x);
+		}
 	});
 
 if (jQuery.browser.mobile) {
@@ -400,7 +405,7 @@ window.onload = function(){
 	setHeaderWidth = $("header").css("width");
 };
 
-window.on("orientationchange",function(){
+window.onorientationchange(function(){
   	setHeaderWidth = $("header").css("width");
 });
 
