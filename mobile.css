@@ -10,5 +10,5 @@ header {
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
