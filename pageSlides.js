@@ -391,7 +391,7 @@ $(document).ready(function() {
 if (jQuery.browser.mobile) {
 		document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='mobile.css'>";
 			var x = String(setHeaderWidth);
-			console.log(x);
+			console.log("before load" + x);
 			$("header").css("max-width",x);
 			$("#aboutSlide").css("display","block");
 			$("#toodSlide").css("display","none");
@@ -403,11 +403,11 @@ if (jQuery.browser.mobile) {
 
 window.onload = function(){
 	setHeaderWidth = $("header").css("width");
-	console.log(setHeaderWidth);
+	$("header").css("max-width",String(setHeaderWidth));
+	console.log("at load " + setHeaderWidth);
 };
 
 window.addEventListener("orientationchange",function() {
-	alert(window.orientation);
 	console.log("it flipped");
 }, false);
 
