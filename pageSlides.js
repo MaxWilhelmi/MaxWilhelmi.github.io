@@ -15,6 +15,8 @@ $(document).ready(function() {
 	// var length = path.getTotalLength();
 	// console.log(length);
 
+	var setHeaderWidth;
+
 	makeTransparentFast("class","photo-overlays","photo-overlays *");
 	$(".photo-overlays").addClass("height-zero");
 
@@ -383,25 +385,25 @@ $(document).ready(function() {
 
 if (jQuery.browser.mobile) {
 		document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='mobile.css'>";
-		
+			var x = setHeaderWidth.toString() + "px";
+			$("header").css("width",x);
 			$("#aboutSlide").css("display","block");
 			$("#toodSlide").css("display","none");
 			$("#treedSlide").css("display","none");
 			$("#gamesSlide").css("display","none");
 			$("#contactSlide").css("display","none");
-			// if (thisSlideName == 'about') {
-			// 	classAdder("id","","toodSlide","treedSlide","gamesSlide","contactSlide");
-			// } else if (thisSlideName == 'tood') {
+			
+}
 
-			// } else if (thisSlideName == 'treed') {
+window.onload = function(){
+	setHeaderWidth = $("header").css("width");
+	setHeaderWidth = parseInt(setHeaderWidth);
+};
 
-			// } else if (thisSlideName == 'games') {
-			// 	$('header').css("width","50%");
-			// } else {
-			// 	$('header').css("width","100%");
-			// }
-		// }
-	}
+window.on("orientationchange",function(){
+  	setHeaderWidth = $("header").css("width");
+	setHeaderWidth = parseInt(setHeaderWidth);
+});
 
 function changeNavSlideColors(pass) {
 	var navID = ("#" + pass);
