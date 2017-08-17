@@ -258,15 +258,15 @@ $(document).ready(function() {
 
 		var thisSlideName = $(this).attr('id');
 
-		// if (jQuery.browser.mobile) {
-		// 	if (thisSlideName == 'about' || thisSlideName == 'tood' ||
-		// 		thisSlideName == 'treed' ||
-		// 		thisSlideName == 'games') {
-		// 		$('header').css("height","auto");
-		// 	} else {
-		// 		$('header').css("height","100%");
-		// 	}
-		// }
+		if (jQuery.browser.mobile) {
+			if (thisSlideName == 'about' || thisSlideName == 'tood' ||
+				thisSlideName == 'treed' ||
+				thisSlideName == 'games') {
+				$('header').css("display","none");
+			} else {
+				$('header').css("height","100%");
+			}
+		}
 
 		changeNavSlideColors(thisSlideName);
 
