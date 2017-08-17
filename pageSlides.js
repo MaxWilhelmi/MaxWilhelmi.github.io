@@ -23,7 +23,7 @@ $(document).ready(function() {
 			// } else {
 			// 	$('header').css("width","100%");
 			// }
-		}
+		// }
 	}
 	
 
