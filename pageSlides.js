@@ -385,7 +385,7 @@ $(document).ready(function() {
 
 if (jQuery.browser.mobile) {
 		document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='mobile.css'>";
-			var x = setHeaderWidth.toString() + "px";
+			var x = setHeaderWidth + "px";
 			console.log(x);
 			$("header").css("max-width",x);
 			$("#aboutSlide").css("display","block");
@@ -398,12 +398,10 @@ if (jQuery.browser.mobile) {
 
 window.onload = function(){
 	setHeaderWidth = $("header").css("width");
-	setHeaderWidth = parseInt(setHeaderWidth);
 };
 
 window.on("orientationchange",function(){
   	setHeaderWidth = $("header").css("width");
-	setHeaderWidth = parseInt(setHeaderWidth);
 });
 
 function changeNavSlideColors(pass) {
