@@ -13,7 +13,7 @@ $(document).ready(function() {
 		// var x = window.innerWidth;
 		// $("body").css("width","50%");
 		// $("header").css("position","fixed"); 
-		// $("header").css("width","50%"); 
+		$("header").css("width","50%"); 
 		// $("header").css("display","flex"); 
 		// $("header").css("flex-flow","row"); 
 		// $("header").css("justify-content","space-between"); 
@@ -262,9 +262,9 @@ $(document).ready(function() {
 			if (thisSlideName == 'about' || thisSlideName == 'tood' ||
 				thisSlideName == 'treed' ||
 				thisSlideName == 'games') {
-				$('header').css("display","none");
+				$('header').css("width","50%");
 			} else {
-				$('header').css("height","100%");
+				$('header').css("width","100%");
 			}
 		}
 
