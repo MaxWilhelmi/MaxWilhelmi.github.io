@@ -406,9 +406,10 @@ window.onload = function(){
 	console.log(setHeaderWidth);
 };
 
-$(window).on("orientationchange", function( event ) {
-  console.log( "This device is in " + event.orientation + " mode!" );
-});
+window.addEventListener("orientationchange",function() {
+	alert(window.orientation);
+	console.log("it flipped");
+}, false);
 
 function changeNavSlideColors(pass) {
 	var navID = ("#" + pass);
