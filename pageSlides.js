@@ -258,16 +258,6 @@ $(document).ready(function() {
 
 		var thisSlideName = $(this).attr('id');
 
-		// if (jQuery.browser.mobile) {
-		// 	if (thisSlideName == 'about' || thisSlideName == 'tood' ||
-		// 		thisSlideName == 'treed' ||
-		// 		thisSlideName == 'games') {
-		// 		$('header').css("width","50%");
-		// 	} else {
-		// 		$('header').css("width","100%");
-		// 	}
-		// }
-
 		changeNavSlideColors(thisSlideName);
 
 		$('html, body').scrollTop(0);
@@ -356,6 +346,31 @@ $(document).ready(function() {
 		}
 
 		adjustBackgroundHeight(thisSlideName);
+
+		if (jQuery.browser.mobile) {
+			if (thisSlideName == 'about') {
+				heightZeroAdder("#aboutSlide");
+			} else if (thisSlideName == 'tood') {
+				heightZeroAdder("#toodSlide");
+			} else if (thisSlideName == 'treed') {
+				heightZeroAdder("#treedSlide");
+			} else if (thisSlideName == 'games') {
+				heightZeroAdder("#gamesSlide");
+			} else {
+				heightZeroAdder("#contactSlide");
+			}
+			// if (thisSlideName == 'about') {
+			// 	classAdder("id","","toodSlide","treedSlide","gamesSlide","contactSlide");
+			// } else if (thisSlideName == 'tood') {
+
+			// } else if (thisSlideName == 'treed') {
+
+			// } else if (thisSlideName == 'games') {
+			// 	$('header').css("width","50%");
+			// } else {
+			// 	$('header').css("width","100%");
+			// }
+		}
 		
 	});
 
