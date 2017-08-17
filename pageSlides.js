@@ -408,15 +408,15 @@ window.onload = function(){
 };
 
 window.addEventListener("orientationchange",function() {
-	console.log("it flipped");
-	var x = $("html").css("width");
-	x = String(x);
-	console.log("x" + x);
-	$("header").css("header width ",x);
-	setHeaderWidth = $("header").css("width");
-	console.log("setHeaderWidth " + setHeaderWidth);
-	alert = function(){};
-}, false);
+	console.log("it flipped"); 
+	var x = $("html").css("width"); 
+	x = String(x); 
+	console.log("x" + x); 
+	$("header").css("header width ",x); 
+	setHeaderWidth = $("header").css("width"); 
+	console.log("setHeaderWidth " + setHeaderWidth); 
+	alert = function(){}; 
+}, false); 
 
 function changeNavSlideColors(pass) {
 	var navID = ("#" + pass);
