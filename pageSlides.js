@@ -386,7 +386,8 @@ $(document).ready(function() {
 if (jQuery.browser.mobile) {
 		document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='mobile.css'>";
 			var x = setHeaderWidth.toString() + "px";
-			$("header").css("width",x);
+			console.log(x);
+			$("header").css("max-width",x);
 			$("#aboutSlide").css("display","block");
 			$("#toodSlide").css("display","none");
 			$("#treedSlide").css("display","none");
