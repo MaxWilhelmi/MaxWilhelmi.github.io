@@ -10,15 +10,20 @@ $(document).ready(function() {
 
 	if (jQuery.browser.mobile) {
 		document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='mobile.css'>";
-		// var x = window.innerWidth;
-		// $("body").css("width","50%");
-		// $("header").css("position","fixed"); 
-		// $("header").css("width","50%"); 
-		// $("header").css("display","flex"); 
-		// $("header").css("flex-flow","row"); 
-		// $("header").css("justify-content","space-between"); 
-		// $("header").css("align-items","center");
-		// $("header").css("overflow","hidden");  
+		
+			heightZeroAdder("#aboutSlide");
+			// if (thisSlideName == 'about') {
+			// 	classAdder("id","","toodSlide","treedSlide","gamesSlide","contactSlide");
+			// } else if (thisSlideName == 'tood') {
+
+			// } else if (thisSlideName == 'treed') {
+
+			// } else if (thisSlideName == 'games') {
+			// 	$('header').css("width","50%");
+			// } else {
+			// 	$('header').css("width","100%");
+			// }
+		}
 	}
 	
 
