@@ -414,7 +414,7 @@ window.addEventListener("orientationchange",function() {
 		var x = $("body").css("width"); 
 		x = String(x); 
 		console.log("x " + x); 
-		$("header").css("header width ",x); 
+		$("header").css("width",x); 
 		setHeaderWidth = $("header").css("width"); 
 		console.log("setHeaderWidth " + setHeaderWidth);
 		alert = function(){}; 
