@@ -13,7 +13,7 @@ $(document).ready(function() {
 		// var x = window.innerWidth;
 		// $("body").css("width","50%");
 		// $("header").css("position","fixed"); 
-		$("header").css("width","50%"); 
+		// $("header").css("width","50%"); 
 		// $("header").css("display","flex"); 
 		// $("header").css("flex-flow","row"); 
 		// $("header").css("justify-content","space-between"); 
@@ -258,15 +258,15 @@ $(document).ready(function() {
 
 		var thisSlideName = $(this).attr('id');
 
-		if (jQuery.browser.mobile) {
-			if (thisSlideName == 'about' || thisSlideName == 'tood' ||
-				thisSlideName == 'treed' ||
-				thisSlideName == 'games') {
-				$('header').css("width","50%");
-			} else {
-				$('header').css("width","100%");
-			}
-		}
+		// if (jQuery.browser.mobile) {
+		// 	if (thisSlideName == 'about' || thisSlideName == 'tood' ||
+		// 		thisSlideName == 'treed' ||
+		// 		thisSlideName == 'games') {
+		// 		$('header').css("width","50%");
+		// 	} else {
+		// 		$('header').css("width","100%");
+		// 	}
+		// }
 
 		changeNavSlideColors(thisSlideName);
 

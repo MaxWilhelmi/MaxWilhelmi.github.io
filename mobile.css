@@ -5,7 +5,7 @@ html, body {
 
 header {
 	position: fixed;
-	width: 50%;
+	width: 100%;
 	z-index: 100;
 	display: flex;
 	flex-flow: row;
