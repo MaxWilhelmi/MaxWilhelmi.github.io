@@ -412,9 +412,9 @@ window.addEventListener("orientationchange",function() {
 
 	setTimeout(function() {
 		var x = $("body").css("width"); 
-		x = String(x); 
-		console.log("x " + x); 
-		$("header").css("width",x); 
+		var v = String(x); 
+		console.log("x " + v); 
+		$("header").css("width",v); 
 		setHeaderWidth = $("header").css("width"); 
 		console.log("setHeaderWidth " + setHeaderWidth);
 		alert = function(){}; 
