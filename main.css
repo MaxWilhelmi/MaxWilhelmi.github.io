@@ -507,10 +507,12 @@ ANIMATIONS
 
 .slideLeft {
 	transform: translateX(-100%);
+	display: none;
 }
 
 .slideRight {
 	transform: translateX(100%);
+	display: none;
 }
 
 .slidegalline {
