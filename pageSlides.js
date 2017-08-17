@@ -258,6 +258,14 @@ $(document).ready(function() {
 
 		var thisSlideName = $(this).attr('id');
 
+		if (jQuery.browser.mobile) {
+			if (thisSlideName == 'about' || thisSlideName == 'tood' ||
+				thisSlideName == 'treed' ||
+				thisSlideName == 'games') {
+				$('header').css("width","50%");
+			}
+		}
+
 		changeNavSlideColors(thisSlideName);
 
 		$('html, body').scrollTop(0);
