@@ -1,10 +1,10 @@
-body {
-	width: auto;
+html, body {
+	width: 100%;
 }
 
 header {
-	position: relative;
-	width: auto;
+	position: fixed;
+	width: 100%;
 	z-index: 100;
 	display: flex;
 	flex-flow: row;
