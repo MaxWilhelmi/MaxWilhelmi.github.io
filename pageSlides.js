@@ -409,10 +409,13 @@ window.onload = function(){
 
 window.addEventListener("orientationchange",function() {
 	console.log("it flipped");
-	console.log(setHeaderWidth);
-	alert("test");
+	var x = $("html").css("width");
+	x = String(x);
+	console.log("x" + x);
+	$("header").css("header width ",x);
+	setHeaderWidth = $("header").css("width");
+	console.log("setHeaderWidth " + setHeaderWidth);
 	alert = function(){};
-	alert("test");
 }, false);
 
 function changeNavSlideColors(pass) {
