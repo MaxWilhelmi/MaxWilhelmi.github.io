@@ -15,6 +15,6 @@ header {
 	/*overflow: hidden;*/
 }
 
-/*.slide {
-	height: auto;
-}*/
+.slide {
+	display: none;
+}

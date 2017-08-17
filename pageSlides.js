@@ -11,7 +11,7 @@ $(document).ready(function() {
 	if (jQuery.browser.mobile) {
 		document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='mobile.css'>";
 		
-			heightZeroAdder("#aboutSlide");
+			$("#aboutSlide").css("display","block");
 			// if (thisSlideName == 'about') {
 			// 	classAdder("id","","toodSlide","treedSlide","gamesSlide","contactSlide");
 			// } else if (thisSlideName == 'tood') {
@@ -354,15 +354,35 @@ $(document).ready(function() {
 
 		if (jQuery.browser.mobile) {
 			if (thisSlideName == 'about') {
-				heightZeroAdder("#aboutSlide");
+				$("#aboutSlide").css("display","block");
+				$("#toodSlide").css("display","none");
+				$("#treedSlide").css("display","none");
+				$("#gamesSlide").css("display","none");
+				$("#contactSlide").css("display","none");
 			} else if (thisSlideName == 'tood') {
-				heightZeroAdder("#toodSlide");
+				$("#aboutSlide").css("display","none");
+				$("#toodSlide").css("display","block");
+				$("#treedSlide").css("display","none");
+				$("#gamesSlide").css("display","none");
+				$("#contactSlide").css("display","none");
 			} else if (thisSlideName == 'treed') {
-				heightZeroAdder("#treedSlide");
+				$("#aboutSlide").css("display","none");
+				$("#toodSlide").css("display","none");
+				$("#treedSlide").css("display","block");
+				$("#gamesSlide").css("display","none");
+				$("#contactSlide").css("display","none");
 			} else if (thisSlideName == 'games') {
-				heightZeroAdder("#gamesSlide");
-			} else {
-				heightZeroAdder("#contactSlide");
+				$("#aboutSlide").css("display","none");
+				$("#toodSlide").css("display","none");
+				$("#treedSlide").css("display","none");
+				$("#gamesSlide").css("display","flex");
+				$("#contactSlide").css("display","none");
+			} else if (thisSlideName == 'contact') {
+				$("#aboutSlide").css("display","none");
+				$("#toodSlide").css("display","none");
+				$("#treedSlide").css("display","none");
+				$("#gamesSlide").css("display","none");
+				$("#contactSlide").css("display","block");
 			}
 			// if (thisSlideName == 'about') {
 			// 	classAdder("id","","toodSlide","treedSlide","gamesSlide","contactSlide");
