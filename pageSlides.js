@@ -15,7 +15,7 @@ $(document).ready(function() {
 	// var length = path.getTotalLength();
 	// console.log(length);
 
-	var setHeaderWidth;
+	var setHeaderWidth = $("header").css("width");;
 
 	makeTransparentFast("class","photo-overlays","photo-overlays *");
 	$(".photo-overlays").addClass("height-zero");
