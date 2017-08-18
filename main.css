@@ -120,6 +120,9 @@ SLIDE PANELS
 #what-i-know, #what-i-do {
 	margin-top: .55em;
 }
+#logo-container #Layer_2 {
+	max-width: 100%;
+}
 
 #toodSlide .photo-container {
 	z-index: 0;
