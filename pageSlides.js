@@ -449,16 +449,6 @@ window.addEventListener("orientationchange",function() {
 
 }, false); 
 
-function stickyHoverFix() {
-    var el = this;
-    var par = el.parentNode;
-    var next = el.nextSibling;
-    par.removeChild(el);
-    setTimeout(function() {
-    	par.insertBefore(el, next);
-    }, 0);
-}
-
 function changeNavSlideColors(pass) {
 	var navID = ("#" + pass);
 
