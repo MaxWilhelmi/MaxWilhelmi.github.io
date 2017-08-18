@@ -13,8 +13,8 @@ header {
 	/*overflow: hidden;*/
 }
 
-#header-logo {
-	padding-right: .4em;
+header nav { 
+	padding-left: .4em;
 }
 
 .slide {
