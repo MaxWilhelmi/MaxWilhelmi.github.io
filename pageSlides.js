@@ -421,8 +421,17 @@ window.addEventListener("orientationchange",function() {
 		console.log("setHeaderWidth " + setHeaderWidth);
 		alert = function(){}; 
 
+		$("#toodSlide .photo-content").css("margin-top","1.5em");
+		$("#treedSlide .photo-content").css("margin-top","1.5em");
+		$("#gamesSlide").css("padding-top","1.5em");
+		$("#contactSlide").css("margin-top",".5em");
+
 		if (window.orientation == 90 || window.orientation == -90) {
 			console.log("it flipped"); 
+			$("#toodSlide .photo-content").css("margin-top","1em");
+			$("#treedSlide .photo-content").css("margin-top","1em");
+			$("#gamesSlide").css("padding-top","1em");
+			$("#contactSlide").css("margin-top","0");
 		}
 
 	}, 600);
