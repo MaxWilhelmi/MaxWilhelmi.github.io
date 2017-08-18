@@ -180,6 +180,7 @@ SLIDE PANELS
 }
 .galDescripts p {
 	margin: 1em;
+	line-height: 1.5em;
 }
 .galDescripts {
 	padding-top: .01%;
@@ -720,7 +721,7 @@ ANIMATIONS
 	animation: offset 25s infinite ease alternate;
 }
 
-#Layer_2 * {
+#logo-container #Layer_2 * {
 	transform-origin: 50% 50%;
 }
 

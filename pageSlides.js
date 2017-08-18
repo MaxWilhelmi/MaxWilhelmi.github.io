@@ -389,7 +389,7 @@ $(document).ready(function() {
 		}
 	});
 
-//only gets called on startup
+//for initial startup
 if (jQuery.browser.mobile) {
 	document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='mobile.css'>";
 	var x = String(setHeaderWidth);
@@ -448,6 +448,16 @@ window.addEventListener("orientationchange",function() {
 	
 
 }, false); 
+
+function stickyHoverFix() {
+    var el = this;
+    var par = el.parentNode;
+    var next = el.nextSibling;
+    par.removeChild(el);
+    setTimeout(function() {
+    	par.insertBefore(el, next);
+    }, 0);
+}
 
 function changeNavSlideColors(pass) {
 	var navID = ("#" + pass);

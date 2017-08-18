@@ -12,6 +12,18 @@ header {
 	align-items: center;
 }
 
+#header {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+
+/* #header nav {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+} */
+
 #header-logo { 
 	padding-right: .4em;
 	padding-left: .2em;
@@ -22,8 +34,66 @@ header {
 	display: none;
 }
 
-@media (min-width: 360px) {
+#aboutSlide h2 {
+	font-size: 1.6em;
+}
+
+#aboutSlide p {
+	font-size: 1em;
+}
+
+#toodSlide h4 {
+	font-size: .9em;
+}
+
+#treedSlide h3 {
+	font-size: .95em;
+}
+
+#contactSlide h6 {
+	font-size: .8em;
+}
+
+@media (min-width: 359px) {
 	#header-logo {
 		display: block;
 	}
+
+	#header {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+	}
+
+	/* #header nav {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	} */
+
+	#aboutSlide h2 {
+		font-size: 2em;
+	}
+
+	#aboutSlide p {
+		font-size: 1.2em;
+	}
+
+	#toodSlide h4 {
+		font-size: 1em;
+	}
+
+	#treedSlide h3 {
+		font-size: 1.17em;
+	}
+
+	#contactSlide h6 {
+		font-size: 1em;
+	}
 }
+
+
+
+
+
+
