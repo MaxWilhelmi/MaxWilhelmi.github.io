@@ -385,6 +385,7 @@ $(document).ready(function() {
 			var x = setHeaderWidth;
 			console.log(x);
 			$("header").css("max-width",x);
+			$("header").css("width",x);
 		}
 	});
 
@@ -408,18 +409,23 @@ window.onload = function(){
 };
 
 window.addEventListener("orientationchange",function() {
-	console.log("it flipped"); 
 
 	setTimeout(function() {
+
 		var x = $("body").css("width"); 
-		var v = String(x); 
-		console.log("x " + v); 
-		$("header").css("max-width",v); 
-		$("header").css("width",v); 
+		x = String(x); 
+		console.log("x " + x); 
+		$("header").css("max-width",x); 
+		$("header").css("width",x); 
 		setHeaderWidth = $("header").css("width"); 
 		console.log("setHeaderWidth " + setHeaderWidth);
 		alert = function(){}; 
-	}, 400);
+
+		if (window.orientation == 90 || window.orientation == -90) {
+			console.log("it flipped"); 
+		}
+
+	}, 600);
 	
 
 }, false); 
