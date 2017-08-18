@@ -10,13 +10,20 @@ header {
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
-	/*overflow: hidden;*/
 }
 
-header nav { 
-	padding-left: .4em;
+#header-logo { 
+	padding-right: .4em;
+	padding-left: .2em;
+	display: none;
 }
 
 .slide {
 	display: none;
+}
+
+@media (min-width: 360px) {
+	#header-logo {
+		display: block;
+	}
 }
