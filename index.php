@@ -642,7 +642,7 @@
 		</div>
 		<!-- Footer -->
 		<div id="footer">
-			<h3>&#169; Max Wilhelmi, 2018</h3>
+			<h3>&#169; Max Wilhelmi, <?php echo date('Y'); ?></h3>
 		</div>
 	</div>
 
