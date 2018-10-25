@@ -1,7 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 * {
 	box-sizing: border-box;
-	font-family: 'Avenir Next', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 html {overflow-x: hidden;}
@@ -439,11 +439,11 @@ header li {
 }
 
 .galDescripts p {
-	color: #1da1f2;
+	color: #fff;
 }
 
 .slidegal {
-	border-color: #fff;
+	border-color: #000;
 }
 
 .treedphoto-frame {
@@ -464,22 +464,27 @@ header li {
 .slidebuttons li, .slidebuttonsDesk li {
 	background: rgba(255,255,255,1);
 }
-.galTitles, .galDescripts {
-	background: rgba(255,255,255,1);
+.galTitles, .galDescripts, .slidegal {
+	background: rgba(0,0,0,1);
 }
 
 h3 {
 	color: #1da1f2;
 }
-#gamesSlide h3, #contactSlide h6 {
+.treedsec h3 {
+	color: #000;
+}
+#gamesSlide h3 {
+	color: #fff;
+}
+#contactSlide h6 {
 	color: #1da1f2;
+}
+#gamesSlide h3, #contactSlide h6 {
 	transition: color .4s ease-in-out; 
 }
 
 .photo-content, #treedphoto-content {
-	background: #fff;
-}
-.slidegal {
 	background: #fff;
 }
 
@@ -489,6 +494,9 @@ h3 {
 
 #footer {
 	background-color: #000;
+}
+#footer h3 {
+	color: #fff;
 }
 
 /*************************
