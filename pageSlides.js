@@ -243,7 +243,7 @@ $(document).ready(function() {
 
 
 	// Slides Section
-	$(".nav-slides").click(function(){
+	$(".nav-slides__slide").click(function(){
 
 		var thisSlideName = $(this).attr('id');
 
@@ -453,7 +453,7 @@ function changeNavSlideColors(pass) {
 	var navID = ("#" + pass);
 
 	//Changes selected slide title to grey
-	$(navID).addClass("header-nav-to-grey");
+	$(navID).addClass("nav-slides__slide--active");
 
 	var navIDS = ["#about", "#tood", "#treed", "#games", "#contact"];
 
@@ -466,7 +466,7 @@ function changeNavSlideColors(pass) {
 
 	//Changes non-centered slide titles to white
 	for (var i = navIDS.length-1; i>=0; i--) {
-		$(navIDS[i]).removeClass("header-nav-to-grey");
+		$(navIDS[i]).removeClass("nav-slides__slide--active");
 	}
 }
 

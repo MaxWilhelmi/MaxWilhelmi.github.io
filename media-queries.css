@@ -39,10 +39,10 @@ MEDIA QUERIES
 	#contactSlide h3 {
 		font-size: 1.7em;
 	}
-	header nav li {
+	.nav-slides__dot {
 		padding: 1.4em 0;
 	}
-	.nav-slides {
+	.nav-slides__slide {
 		padding: 1.4em 2.5%;
 	}
 	#contact {
@@ -73,10 +73,10 @@ MEDIA QUERIES
 		font-size: 1.8em;
 		margin: 1.1em 0 1em 0;
 	}
-	header nav li {
+	.nav-slides__dot {
 		padding: 1.5em 0;
 	}
-	.nav-slides {
+	.nav-slides__slide {
 		padding: 1.5em 3.25%;
 	}
 	#contact {
@@ -99,10 +99,11 @@ MEDIA QUERIES
 	.slide {
 		top: 4.3em;
 	}
-	header nav li {
+	.nav-slides__dot {
 		font-size: .95em;
 	}
-	.nav-slides {
+	.nav-slides__slide {
+		font-size: .95em;
 		padding: 1.5em 3.5%;
 	}
 	#contact {
@@ -117,11 +118,12 @@ MEDIA QUERIES
 		font-size: 2.2em;
 		margin: .9em 0 .9em 0;
 	}
-	header nav li {
+	.nav-slides__dot {
 		padding: 1.6em 0;
 		font-size: .97em;
 	}
-	.nav-slides {
+	.nav-slides__slide {
+		font-size: .97em;
 		padding: 1.6em 4%;
 	}
 	#contact {
@@ -132,7 +134,8 @@ MEDIA QUERIES
 	.slide {
 		top: 4.4em;
 	}
-	header nav li {
+	.nav-slides__dot,
+	.nav-slides__slide {
 		font-size: 1em;
 	}
 	#contactSlide h6 {
