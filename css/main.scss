@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html {overflow-x: hidden;}
+
+html, body {margin:0;padding:0;height:100%;}
+
+a {
+	text-decoration: none;
+	white-space: nowrap;		
+}
+
+/*************************
+HEADING
+**************************/
+nav {
+	text-align: center;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	margin: 0;
+	width: 80%;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+}
+
+.nav-slides__dot {
+	text-decoration: none;
+	font-size: 0.9em;
+	padding: 1.25em 0;
+}
+
+.nav-slides__slide {
+	text-decoration: none;
+	font-size: 0.9em;
+	padding: 1.25em 1%;
+	white-space: nowrap;
+	width: min-content;
+}
+
+#contact {
+	padding-right: 3%;
+}
+
+#header-logo {
+	padding: .75em 0 .4em 0;
+	width: 20%;
+	max-width: 120px;
+	text-align: center;
+}
+
+#header-logo img {
+	width: 90%;
+}
+
+/*************************
+SLIDE PANELS
+**************************/
+.panel-parent {
+	position: relative;
+}
+.slide {
+	float: left;
+	width: 100%;
+	padding: 1px 0 1px 0;
+	position: absolute;
+	top: 42px;
+	left: 0;
+}
+.slide h3{
+	text-align: center;
+}
+
+.aboutTextBlock {
+	background: rgba(0,0,0,1);
+	border-radius: 1em;
+	margin: 1em 3em;
+	padding: 1em 0;
+	text-align: center;
+}
+.aboutTextBlock h2 {
+	font-size: 2em;
+	margin: 15px 0;
+}
+.aboutTextBlock p {
+	font-size: 1.2em;
+	margin: 15px 1em;
+}
+#aboutTextLarge {
+	display: none;
+}
+#aboutMe {	
+	margin: 1em 1.5em;
+}
+#aboutMe p {
+	text-align: justify;
+	margin: 15px 1.5em;
+	line-height: 1.75em;
+}
+#aboutTextLargeContainer {
+	margin-top: 1.8em;
+}
+#what-i-know, #what-i-do {
+	margin-top: .55em;
+}
+#logo-container #Layer_2 {
+	max-width: 100%;
+}
+
+#toodSlide .photo-container {
+	z-index: 0;
+}
+#toodSlide h4 {
+	z-index: 0;
+	width: 100%;
+	padding: 5px;
+	/*position: absolute;*/
+	bottom: 0;
+	margin: 0;
+	color: #FFF;
+	background-color: rgba(0,0,0,0.6); 
+}
+
+#contactSlide .photo-content {
+	padding-top: .1em;
+	padding-bottom: 1em; 
+}
+#contactSlide h3 {
+	margin: 1.3em 0 1.1em 0;
+	font-size: 1.3em;
+}
+#contactSlide h6 {
+	font-size: 1em;
+}
+
+#gamesSlide {
+	padding: 1em;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#gamesSlide nav ul {
+	padding-left: 0;
+	margin: 0;
+}
+#gamesSlide nav li {
+	margin: 0 5%;
+}
+#gamesSlide h3 {
+	padding-top: .25%;
+}
+#gamesSlide a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.galTitles {
+	padding-top: .01%;
+	padding-bottom: .01%;
+	margin-bottom: 1em;
+	border-radius: 1em;
+}
+.galDescripts p {
+	margin: 1em;
+	line-height: 1.5em;
+}
+.galDescripts {
+	padding-top: .01%;
+	padding-bottom: .01%;
+	margin-bottom: 1em;
+	margin-top: 0.8em;
+	border-radius: 1em;
+}
+.galTitlesDesk, .slidebuttonsDesk {
+	display: none;
+}
+
+.contact-method {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	margin: 1em 1em 0 1em;
+	padding: 4% 3% 3% 6%; 
+	border-style: solid;
+	border-width: .3em;
+	border-radius: 1em;
+	font-size: 100%;
+}
+
+#footer {
+	width: 100%;
+	z-index: 100;
+	height: 4em;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+}
+#footer h3 {
+	margin: 0 0 0 1.75em;
+}
+
+/*************************
+IMAGES
+**************************/
+.photo-content {
+	margin: 1em; 
+	border-radius: 1em; 
+}
+
+#treedphoto-content {
+	padding: 1px 0 1em 0; 
+}
+
+.photo-container {
+	text-align: center;
+	margin: 2em 1em;
+	max-width: 100%;
+}
+
+.photo-overlays img {
+	position: fixed;
+	max-height: 90%;
+	max-width: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 950;
+}
+#tood-overlay-bkg, #treed-overlay-bkg, #games-overlay-bkg {
+	position: fixed;
+	width: 101%;
+	height: 101%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 900;
+}
+
+#toodSlide .photo-container img {
+	max-width: 100%;
+	border-width: .3em;
+	border-style: solid;
+}
+#toodSlide .photo-container {
+	position: relative;
+	border-color: #ddd;
+	border-width: .3em;
+	border-style: solid;
+}
+
+#grizw {
+	background: url("imgs/griz-white.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#ktn {
+	background: url("imgs/feed-me-ktn-web.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#grizwip {
+	background: url("imgs/griz-pin-collage.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#pika {
+	background: url("imgs/pikachu-pin-collage.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#jabari {
+	background: url("imgs/jabari-pins-icons.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#draggy {
+	background: url("imgs/saving-draggy-sprites.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#clouds {
+	background: url("imgs/candy-clouds.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#porterw {
+	background: url("imgs/porter-worlds-wide.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#porterp {
+	background: url("imgs/porter-worlds.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#expectg {
+	background: url("imgs/expect-greatness.jpg") no-repeat center center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#toodSlide .photo-content img {
+	opacity: 0;
+}
+#toodSlide .photo-content {
+	padding: 1em 0 1px 0;
+}
+
+.treedphoto-frame {
+	margin: 0 1em; 
+	border-width: .3em;
+	border-style: solid;
+}
+
+.treedphoto-frame img {
+	max-width: 100%;
+}
+
+.slidegal {
+	display: block;
+	text-align: center;
+	padding-top: 0.3em;
+	border-width: 0.5em 0.8em;
+	border-style: solid;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.slidegalline {
+	display: flex;
+	flex-flow: row;
+}
+
+.slidegalline img {
+	max-width: 300%;
+}
+
+.slidebuttons, .slidebuttonsDesk {
+	margin-top: 1em;
+}
+
+.slidebuttons li, .slidebuttonsDesk li {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	margin: 0 1em;
+}
+
+#showreel-sec img {
+	display: none;
+}
+
+#showreel-sec .photo-container {
+	margin-bottom: -1em;
+}
+
+.contact-method-item {
+	width: 60%;
+}
+.contact-method .svg {
+	width: 30%;
+	margin-right: 6%;
+}
+#logo-container {
+	margin: 5% 5% 0 5%;
+}
+#background-svg svg {
+	position: absolute;
+	top: 48px;
+	left: 0px;
+}
+#background-svg {
+	position: relative;
+	overflow: hidden;
+}
+
+/*Image Spacing*/
+.one-top {
+	margin-top: 1em;
+}
+.seven-five-bottom {
+	margin-bottom: 0.75em;
+}
+#showreel iframe {
+	height: 100%;
+}
+#geth, #legoSkelly, #gundam, #showreel {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#grizw {
+	margin-top: 0;
+}
+#showreel {
+	margin-top: 1em;
+}
+#expectg {
+	margin-bottom: 1em;
+}
+#asundrgame1 img, #asundrgame2 img {
+	max-width: 200%;
+}
+
+/*************************
+COLORS
+**************************/
+body {
+	background: #1da1f2;
+}
+header {
+	background: #000;
+}
+.nav-slides__slide,
+.nav-slides__dot {
+	color: #fff;
+	transition: color .4s ease-in-out;
+}
+
+.aboutTextBlock {
+	color: #fff;
+}
+
+.galDescripts p {
+	color: #fff;
+}
+
+.slidegal {
+	border-color: #000;
+}
+
+.treedphoto-frame {
+	border-color: #ddd;
+}
+
+#tood-overlay-bkg, #treed-overlay-bkg, #games-overlay-bkg {
+	background: #000;
+}
+
+#toodSlide .photo-container {
+	border-color: #ddd;
+}
+#toodSlide .photo-container img {
+	border-color: #ddd;
+}
+
+.slidebuttons li, .slidebuttonsDesk li {
+	background: rgba(255,255,255,1);
+}
+.galTitles, .galDescripts, .slidegal {
+	background: rgba(0,0,0,1);
+}
+
+h3 {
+	color: #1da1f2;
+}
+.treedsec h3 {
+	color: #000;
+}
+#gamesSlide h3 {
+	color: #fff;
+}
+#contactSlide h6 {
+	color: #1da1f2;
+}
+#gamesSlide h3, #contactSlide h6 {
+	transition: color .4s ease-in-out; 
+}
+
+.photo-content, #treedphoto-content {
+	background: #fff;
+}
+
+.contact-method {
+	border-color: #1da1f2;
+}
+
+#footer {
+	background-color: #000;
+}
+#footer h3 {
+	color: #fff;
+}
+
+/*************************
+ANIMATIONS
+**************************/
+.height-zero, .height-zero * {
+	height: 0;
+	display: none;
+}
+
+.nav-slides__slide:hover {
+	color: #888;
+}
+.nav-slides__slide--active {
+	color: #888;
+}
+
+.slide {
+	transition: transform .4s ease-out;
+}
+
+.slideLeft {
+	transform: translateX(-100%);
+}
+
+.slideRight {
+	transform: translateX(100%);
+}
+
+.slidegalline {
+	transition: transform .8s ease-out;
+}
+
+#gamesSlide h3:hover, #contactSlide h6:hover {
+	color: #90d9fc;
+}
+
+#draggygame1, #circlegame1 {
+	transform: translateX(-300%);
+}
+#draggygame2, #circlegame2, #crimegame2 {
+	transform: translateX(-100%);
+}
+#draggygame3, #crimegame3, #circlegame3, #asundrgame2 {
+	transform: translateX(100%);
+}
+#crimegame1 {
+	transform: translateX(-299.5%);
+}
+
+/*logo SVG animations*/
+@keyframes offset {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg); 
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes eye-movement {
+	6% {
+		transform: translate3d(0,0,0);
+	}
+	6.25% {
+		transform: translate3d(0.35%,-0.35%,0);
+	}
+	11% {
+		transform: translate3d(0.35%,-0.35%,0);
+	}
+	11.25% {
+		transform: translate3d(0.35%,0.35%,0);
+	}
+	16% {
+		transform: translate3d(0.35%,0.35%,0);
+	}
+	16.25% {
+		transform: translate3d(-1%,0,0);
+	}
+	19% {
+		transform: translate3d(-1%,0,0);
+	}
+	19.25% {
+		transform: translate3d(-0.35%,0.35%,0);
+	}
+	23% {
+		transform: translate3d(-0.35%,0.35%,0);
+	}
+	23.25% {
+		transform: translate3d(0,-1%,0);
+	}
+	26% {
+		transform: translate3d(0,-1%,0);
+	}
+	26.25% {
+		transform: translate3d(0,0,0);
+	}
+	29% {
+		transform: translate3d(0,0,0);
+	}
+	29.25% {
+		transform: translate3d(1%,0,0);
+	}
+	34% {
+		transform: translate3d(1%,0,0);
+	}
+	34.25% {
+		transform: translate3d(0,1%,0);
+	}
+	36% {
+		transform: translate3d(0,1%,0);
+	}
+	36.25% {
+		transform: translate3d(0.35%,0.35%,0);
+	}
+	40% {
+		transform: translate3d(0.35%,0.35%,0);
+	}
+	40.25% {
+		transform: translate3d(-0.35%,0.35%,0);
+	}
+	41% {
+		transform: translate3d(-0.35%,0.35%,0);
+	}
+	41.25% {
+		transform: translate3d(-1%,0,0);
+	}
+	46% {
+		transform: translate3d(-1%,0,0);
+	}
+	46.25% {
+		transform: translate3d(0,0,0);
+	}
+	51% {
+		transform: translate3d(0,0,0);
+	}
+	51.25% {
+		transform: translate3d(0,1%,0);
+	}
+	55% {
+		transform: translate3d(0,1%,0);
+	}
+	55.25% {
+		transform: translate3d(0.35%,-0.35%,0);
+	}
+	59% {
+		transform: translate3d(0.35%,-0.35%,0);
+	}
+	59.25% {
+		transform: translate3d(0,-1%,0);
+	}
+	61% {
+		transform: translate3d(0,-1%,0);
+	}
+	61.25% {
+		transform: translate3d(-1%,0,0);
+	}
+	65% {
+		transform: translate3d(-1%,0,0);
+	}
+	65.25% {
+		transform: translate3d(-0.35%,0.35%,0);
+	}
+	68% {
+		transform: translate3d(-0.35%,0.35%,0);
+	}
+	68.25% {
+		transform: translate3d(0,0,0);
+	}
+	74% {
+		transform: translate3d(0,0,0);
+	}
+	74.25% {
+		transform: translate3d(1%,0,0);
+	}
+	79% {
+		transform: translate3d(1%,0,0);
+	}
+	79.25% {
+		transform: translate3d(0.35%,0.35%,0);
+	}
+	80% {
+		transform: translate3d(0.35%,0.35%,0);
+	}
+	80.25% {
+		transform: translate3d(0,1%,0);
+	}
+	84% {
+		transform: translate3d(0,1%,0);
+	}
+	84.25% {
+		transform: translate3d(0,0,0);
+	}
+	89% {
+		transform: translate3d(0,0,0);
+	}
+	89.25% {
+		transform: translate3d(-1%,0,0);
+	}
+	93% {
+		transform: translate3d(-1%,0,0);
+	}
+	93.25% {
+		transform: translate3d(-0.35%,-0.35%,0);
+	}
+	96% {
+		transform: translate3d(-0.35%,-0.35%,0);
+	}
+	96.25% {
+		transform: translate3d(0,-1%,0);
+	}
+	99.75% {
+		transform: translate3d(0,-1%,0);
+	}
+	100% {
+		transform: translate3d(0,0,0);
+	}
+
+}
+
+#export-workspace * {
+	transform-origin: 50% 50%;
+}
+.cls-1 {
+  	stroke-dasharray: 150;
+  	stroke-dashoffset: 2275.123046875;
+	animation: offset 25s infinite ease alternate;
+}
+
+#logo-container #Layer_2 * {
+	transform-origin: 50% 50%;
+}
+
+#spinner {
+	animation: rotate 7s infinite linear forwards;
+}
+
+#pupil {
+	animation: eye-movement 60s infinite linear forwards;
+}
