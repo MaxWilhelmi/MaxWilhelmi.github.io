@@ -259,13 +259,13 @@ IMAGES
 
 #toodSlide .photo-container img {
 	max-width: 100%;
-	border-width: .3em;
+	border-width: 0 0 .3em 0;
 	border-style: solid;
 }
 #toodSlide .photo-container {
 	position: relative;
 	border-color: #ddd;
-	border-width: .3em;
+	border-width: .6em;
 	border-style: solid;
 }
 
@@ -319,9 +319,9 @@ IMAGES
 	background-size: cover;
 	background-repeat: repeat;
 }
-#toodSlide .photo-content img {
+/*#toodSlide .photo-content img {
 	opacity: 0;
-}
+}*/
 #toodSlide .photo-content {
 	padding: 1em 0 1px 0;
 }
@@ -459,6 +459,7 @@ header {
 
 #toodSlide .photo-container {
 	border-color: #ddd;
+	background-color: #ddd;
 }
 #toodSlide .photo-container img {
 	border-color: #ddd;

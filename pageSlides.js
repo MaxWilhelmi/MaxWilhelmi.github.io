@@ -391,7 +391,7 @@ $(document).ready(function() {
 
 //for initial startup
 if (jQuery.browser.mobile) {
-	document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='mobile.css'>";
+	document.getElementById("mobile-css").innerHTML = "<link rel='stylesheet' href='css/mobile.css'>";
 	var x = String(setHeaderWidth);
 	console.log("before load" + x);
 	$("header").css("max-width",x);

@@ -254,58 +254,62 @@ MEDIA QUERIES
 	}
 	#grizw {
 		margin-top: 1em;
-		background: url("imgs/griz-white.jpg") no-repeat center center;
+		background: url("../imgs/griz-white.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#ktn {
-		background: url("imgs/feed-me-ktn-web.jpg") no-repeat center center;
+		background: url("../imgs/feed-me-ktn-web.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#grizwip {
-		background: url("imgs/griz-pin-collage.jpg") no-repeat center center;
+		background: url("../imgs/griz-pin-collage.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#pika {
-		background: url("imgs/pikachu-pin-collage.jpg") no-repeat center center;
+		background: url("../imgs/pikachu-pin-collage.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#jabari {
-		background: url("imgs/jabari-pins-icons.jpg") no-repeat center center;
+		background: url("../imgs/jabari-pins-icons.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#draggy {
-		background: url("imgs/saving-draggy-sprites.jpg") no-repeat center center;
+		background: url("../imgs/saving-draggy-sprites.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#clouds {
-		background: url("imgs/candy-clouds.jpg") no-repeat center center;
+		background: url("../imgs/candy-clouds.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#porterw {
-		background: url("imgs/porter-worlds-wide.jpg") no-repeat center center;
+		background: url("../imgs/porter-worlds-wide.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#porterp {
-		background: url("imgs/porter-worlds.jpg") no-repeat center center;
+		background: url("../imgs/porter-worlds.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 	#expectg {
-		background: url("imgs/expect-greatness.jpg") no-repeat center center;
+		background: url("../imgs/expect-greatness.jpg") no-repeat center center;
 		background-size: cover;
     	background-repeat: repeat;
 	}
 
 	#toodSlide .photo-container {
 		position: relative;
+		border-width: .3em;
+	}
+	#toodSlide .photo-container img{
+		border-width: .3em;
 	}
 	#toodSlide h4 {
 		z-index: 10;
